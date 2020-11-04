@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "start": "snowpack dev --secure",
     "build": "snowpack build",
     "test": "jest"
   },
