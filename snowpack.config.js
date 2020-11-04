@@ -1,12 +1,13 @@
+/** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: '/',
-    src: '/_dist_',
+    public: "/",
+    src: "/dist",
   },
   plugins: [
-    '@snowpack/plugin-svelte',
-    '@snowpack/plugin-dotenv',
-    '@snowpack/plugin-typescript',
+    "@snowpack/plugin-svelte",
+    "@snowpack/plugin-dotenv",
+    "@snowpack/plugin-typescript",
   ],
   install: [
     /* ... */
@@ -18,7 +19,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    /* ... */
+    metaDir: "snowpack",
   },
   proxy: {
     /* ... */
