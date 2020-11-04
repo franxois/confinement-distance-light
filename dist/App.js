@@ -108,7 +108,7 @@ function create_fragment(ctx) {
 			t12 = space();
 			button = element("button");
 			button.textContent = "save position";
-			if (img.src !== (img_src_value = "/compass-svgrepo-com.svg")) attr(img, "src", img_src_value);
+			if (img.src !== (img_src_value = "compass-svgrepo-com.svg")) attr(img, "src", img_src_value);
 			attr(img, "class", "App-logo svelte-11dvc2w");
 			attr(img, "alt", "logo");
 			attr(p0, "class", "svelte-11dvc2w");
