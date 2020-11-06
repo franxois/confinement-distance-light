@@ -61,11 +61,6 @@
   .App {
     text-align: center;
   }
-  .App code {
-    background: #0002;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
   .App p {
     margin: 0.4rem;
   }
@@ -104,8 +99,15 @@
     <p>Précision : {precision}</p>
     <p>Date : {humanDate}</p>
     {#if distance}
-      <p>Distance : {distance} from <a href={link2homeGmap}>🏠</a></p>
+      <p>
+        Distance :
+        {distance}
+        from
+        <a target="_blank" href={link2homeGmap}>🏠</a>
+      </p>
     {/if}
-    <button on:click={saveLocation}>save position</button>
+    <button
+      class="bg-purple-900 hover:bg-purple-700 text-white font-bold my-5 px-4 rounded"
+      on:click={saveLocation}>save position</button>
   </header>
 </div>
