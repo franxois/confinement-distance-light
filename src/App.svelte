@@ -53,18 +53,13 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   :global(body) {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
   .App {
     text-align: center;
-  }
-  .App code {
-    background: #0002;
-    padding: 4px 8px;
-    border-radius: 4px;
   }
   .App p {
     margin: 0.4rem;
@@ -95,6 +90,27 @@
       transform: scale(1.06);
     }
   }
+
+  .btn {
+    margin-top: 30px;
+    background-color: #44337a;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    &:hover {
+      background-color: #6b46c1;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: #5c2ccc;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
 </style>
 
 <div class="App">
@@ -104,8 +120,13 @@
     <p>Précision : {precision}</p>
     <p>Date : {humanDate}</p>
     {#if distance}
-      <p>Distance : {distance} from <a href={link2homeGmap}>🏠</a></p>
+      <p>
+        Distance :
+        {distance}
+        from
+        <a href={link2homeGmap} target="_blank">🏠</a>
+      </p>
     {/if}
-    <button on:click={saveLocation}>save position</button>
+    <button class="btn" on:click={saveLocation}>save position</button>
   </header>
 </div>

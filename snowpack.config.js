@@ -5,6 +5,7 @@ module.exports = {
     src: "/dist",
   },
   plugins: [
+    "@snowpack/plugin-sass",
     "@snowpack/plugin-svelte",
     "@snowpack/plugin-dotenv",
     "@snowpack/plugin-typescript",
