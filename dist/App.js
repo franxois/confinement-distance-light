@@ -29,11 +29,12 @@ function create_if_block(ctx) {
 	return {
 		c() {
 			p = element("p");
-			t0 = text("Distance : ");
+			t0 = text("Distance :\n        ");
 			t1 = text(/*distance*/ ctx[2]);
-			t2 = text(" from ");
+			t2 = text("\n        from\n        ");
 			a = element("a");
 			t3 = text("🏠");
+			attr(a, "target", "_blank");
 			attr(a, "href", /*link2homeGmap*/ ctx[3]);
 			attr(p, "class", "svelte-11dvc2w");
 		},
@@ -114,6 +115,7 @@ function create_fragment(ctx) {
 			attr(p0, "class", "svelte-11dvc2w");
 			attr(p1, "class", "svelte-11dvc2w");
 			attr(p2, "class", "svelte-11dvc2w");
+			attr(button, "class", "bg-purple-900 hover:bg-purple-700 text-white font-bold my-5 px-4 rounded");
 			attr(header, "class", "App-header svelte-11dvc2w");
 			attr(div, "class", "App svelte-11dvc2w");
 		},

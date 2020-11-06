@@ -2,6 +2,7 @@ import __SNOWPACK_ENV__ from '../snowpack/env.js';
 import.meta.env = __SNOWPACK_ENV__;
 
 import App2 from "./App.js";
+import "./index.css.proxy.js";
 var app = new App2({
   target: document.body
 });
