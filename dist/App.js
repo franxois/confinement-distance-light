@@ -36,7 +36,7 @@ function create_if_block(ctx) {
 			t3 = text("🏠");
 			attr(a, "href", /*link2homeGmap*/ ctx[3]);
 			attr(a, "target", "_blank");
-			attr(p, "class", "svelte-ikjdiy");
+			attr(p, "class", "svelte-1mj7hdf");
 		},
 		m(target, anchor) {
 			insert(target, p, anchor);
@@ -110,14 +110,14 @@ function create_fragment(ctx) {
 			button = element("button");
 			button.textContent = "save position";
 			if (img.src !== (img_src_value = "compass-svgrepo-com.svg")) attr(img, "src", img_src_value);
-			attr(img, "class", "App-logo svelte-ikjdiy");
+			attr(img, "class", "App-logo svelte-1mj7hdf");
 			attr(img, "alt", "logo");
-			attr(p0, "class", "svelte-ikjdiy");
-			attr(p1, "class", "svelte-ikjdiy");
-			attr(p2, "class", "svelte-ikjdiy");
-			attr(button, "class", "btn svelte-ikjdiy");
-			attr(header, "class", "App-header svelte-ikjdiy");
-			attr(div, "class", "App svelte-ikjdiy");
+			attr(p0, "class", "svelte-1mj7hdf");
+			attr(p1, "class", "svelte-1mj7hdf");
+			attr(p2, "class", "svelte-1mj7hdf");
+			attr(button, "class", "btn svelte-1mj7hdf");
+			attr(header, "class", "App-header svelte-1mj7hdf");
+			attr(div, "class", "App svelte-1mj7hdf");
 		},
 		m(target, anchor) {
 			insert(target, div, anchor);
