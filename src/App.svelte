@@ -60,9 +60,9 @@
   }
   .App {
     text-align: center;
-  }
-  .App p {
-    margin: 0.4rem;
+    p {
+      margin: 0.4rem;
+    }
   }
 
   .App-header {
@@ -91,9 +91,11 @@
     }
   }
 
+  $button-color: #44337a;
+
   .btn {
     margin-top: 30px;
-    background-color: #44337a;
+    background-color: $button-color;
     color: white;
     padding: 5px 15px;
     font-size: 0.8em;
@@ -101,11 +103,11 @@
     border: 0;
     border-radius: 5px;
     &:hover {
-      background-color: #6b46c1;
+      background-color: scale-color($color: $button-color, $lightness: 10%);
       cursor: pointer;
     }
     &:active {
-      background-color: #5c2ccc;
+      background-color: scale-color($color: $button-color, $lightness: 15%);
     }
     &:focus {
       outline: 0;
