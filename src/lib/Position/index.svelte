@@ -52,7 +52,7 @@
 </svelte:head>
 
 <section class="App-header">
-	<img src="/compass-svgrepo-com.svg" class="App-logo" alt="logo" />
+	<img src="compass-svgrepo-com.svg" class="App-logo" alt="logo" />
 	<p>Position : {latitude},{longitude}</p>
 	<p>Précision : {precision}</p>
 	<p>Date : {humanDate}</p>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import { base } from '$app/paths';
 
 	const links = [
 		{ url: '/', title: 'Home' },
@@ -18,7 +18,7 @@
 		<ul>
 			{#each links as link}
 				<li class:active={$page.path === link.url}>
-					<a sveltekit:prefetch href={link.url}>{link.title}</a>
+					<a sveltekit:prefetch href={base + link.url}>{link.title}</a>
 				</li>
 			{/each}
 		</ul>
