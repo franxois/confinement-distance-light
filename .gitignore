@@ -1,7 +1,5 @@
-.build
-build
-web_modules
+.DS_Store
 node_modules
-
-snowpack.key
-snowpack.crt
+/.svelte-kit
+/package
+build/
